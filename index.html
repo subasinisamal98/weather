@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-image: url('weather.jpg');
+            background-repeat: no-repeat;
+            background-size: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container{
+            text-align: center;
+        }
+        h1{
+            color: white;
+            letter-spacing: 4px;
+            font-family: "Vast Shadow", serif;
+        }
+        #input-section{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+        }
+        input{
+            width: 250px;
+            padding: 10px;
+            border-radius: 2px;
+            border: none;
+        }
+        button{
+            width: 120px;
+            border-radius: 2px;
+            border: none;
+            margin-left: 8px;
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+        #errorDisplay{
+            color: red;
+            margin-top: 20px;
+            text-align: center;
+            margin-left: 600px;
+            width: 300px;
+            height: 40px;
+            border: #818b81;
+            font-size: 20px;
+            padding: 0;
+            border-radius: 10px;
+        }
+        #display{
+            margin-top: 50px;
+            text-align: center;
+            margin-left: 600px;
+            width: 300px;
+            height: 250px;
+            border: #818b81;
+            font-size: 20px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>WEATHER APP</h1>
+        <div class="section">
+            <div id="input-section">
+                <input type="text" id="city" placeholder="Enter city Name">
+                <button id="btn1">WeatherData</button>
+                <button id="btn2">RESET</button>
+            </div>
+            <div id="errorDisplay"></div>
+            <div id="display"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
